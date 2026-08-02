@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: music for everyone</title>
+    <link style="background-color: green; width: 244px; height: 244px;" rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <img src="icons/logo.svg" alt="">
+        </span>
+        <button class="home-icon"><img src="icons/home.svg" alt=""></button>
+        <div class="search-bar">
+            <img src="icons/search.svg" alt="" class="nav-search-icon">
+            <input type="text" placeholder="What do you want to play?">
+            <div class="divider"></div>
+            <button class="browse-btn">
+                <img src="icons/browse.svg" alt="">
+            </button>
+        </div>
+        <div class="nav-right">
+            <button class="premium-btn">Explore Premium</button>
+            <button class="install-btn">
+                <img src="icons/download.svg" alt="">
+                <span>Install App</span>
+            </button>
+
+            <button class="bell-icon">
+                <img src="icons/bell.svg" alt="">
+            </button>
+
+            <button class="users-icon">
+                <img src="icons/users.svg" alt="">
+            </button>
+
+            <button class="profile-btn">A</button>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left">
+            <div class="nav-sidebar">
+                <h1>Your Library</h1>
+                <button class="create-btn">
+                    <img src="icons/plus.svg" alt="">
+                </button>
+                <span class="expand-btn">
+                    <img src="icons/expand.svg" alt="">
+                </span>
+            </div>
+
+            <div class="library-btn">
+                <button>Playlists</button>
+                <button>Artists</button>
+            </div>
+            <div class="library-toolbar">
+                <span class="library-search-icon">
+                    <img src="icons/search.svg" alt="">
+                </span>
+                <button class="recents-btn">
+                    Recents
+                    <img src="icons/recents.svg" alt="">
+                </button>
+            </div>
+            <div class="library-list">
+                <div class="library-item liked-playlist">
+                    <img src="images/Liked-Songs.png" alt="Liked Songs">
+
+                    <div class="library-info">
+                        <div class="library-title">Liked Songs</div>
+
+                        <div class="library-meta">
+                            <img class="pin-icon" src="icons/pin.svg" alt="">
+                            <span>Playlist</span>
+                            <span>•</span>
+                            <span>4 songs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-liked">
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="library-item">
+                    <img src="images/taylor.png" alt="Taylor Swift">
+
+                    <div class="library-info">
+                        <div class="library-title">Taylor Swift</div>
+
+                        <div class="library-meta">
+                            <span>Artist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-item">
+                    <img src="images/talwiinder.png" alt="Talwiinder">
+
+                    <div class="library-info">
+                        <div class="library-title">Talwiinder</div>
+
+                        <div class="library-meta">
+                            <span>Artist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-item">
+                    <img src="images/arijit.png" alt="Arijit Singh">
+                    <div class="library-info">
+                        <div class="library-title">Arijit Singh</div>
+                        <div class="library-meta">
+                            <span>Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="music-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Music</button>
+                <div class="section-header">
+                    <div>
+                        <p>Made For</p>
+                        <h2>
+                            <a href="https://open.spotify.com/section/0JQ5DAUnp4wcj0bCb3wh3S">Alisha Areej</a>
+                        </h2>
+                    </div>
+
+                    <a href="https://open.spotify.com/section/0JQ5DAUnp4wcj0bCb3wh3S" class="show-all">Show all</a>
+                </div>
+            </div>
+
+            <div class="card-carousel-wrapper">
+                <button class="card-arrow card-prev-btn"><img src="icons/prev.svg" alt=""></button>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E38egdJESCNuh">
+                            <div class="card-image">
+                                <img src="images/songsCards/dailyMix1.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    Taylor Swift, Olivia Rodrigo, Ariana Grande and more
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E39dWpALPkYgm">
+                            <div class="card-image">
+                                <img src="images/songsCards/dailyMix2.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    Abdul Hannan, Maanu, Toshi and more
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E38vHX4zUXxVL">
+                            <div class="card-image">
+                                <img src="images/songsCards/dailyMix3.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    Aashir Wajahat, Samar Jafri, Afusic and more
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E36IHn0FLwIMH">
+                            <div class="card-image">
+                                <img src="images/songsCards/dailyMix4.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    sombr and Benson Boone
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E37ffC5S3KuAg">
+                            <div class="card-image">
+                                <img src="images/songsCards/dailyMix5.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    Sanjay Leela Bhansali, Mithoon, Atif Aslam and more
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E38Fhp5DQadrn">
+                            <div class="card-image">
+                                <img src="images/songsCards/dailyMix6.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    LE SSERAFIM and BTS
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXcQOF8ZWskiJH">
+                            <div class="card-image">
+                                <img src="images/songsCards/discover.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <span>
+                                    Your shortcut to hidden gems, deep cuts, and future faves, updated every Monday.
+                                    You’ll
+                                    know
+                                    when you hear it.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="card-arrow card-next-btn"><img src="icons/next.svg" alt=""></button>
+            </div>
+
+            <div class="section-header">
+                <div>
+                    <p>Inspired by your recent activity</p>
+                    <h2>
+                        <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3F">Recommended for today</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="card-carousel-wrapper">
+                <button class="card-arrow card-prev-btn"><img src="icons/prev.svg" alt=""></button>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/4BPhVjOqAdV5bFxDglYZ4f">
+                            <div class="card-image">
+                                <img src="images/songsCards/pyaarKyunBanaya.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/4BPhVjOqAdV5bFxDglYZ4f">
+                                    <p>Pyaar Kyun Banaya</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/6YSVUxXGsQQD2cWSJhN8re">Nehaal Naseem,</a>
+                                    <a href="https://open.spotify.com/artist/2m11wmbQGV0uSMzwPuk6zv">Haider Ali</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/5uHvJi0f62wZqQIZae2Eah">
+                            <div class="card-image">
+                                <img src="images/songsCards/laavan.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/5uHvJi0f62wZqQIZae2Eah">
+                                    <p>LAAVAN</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/0mJDQBWytBhOh5JB1DOQ1c">Jasmine
+                                        Sandlas,</a>
+                                    <a href="https://open.spotify.com/artist/3JXcjiMGfbPsp7deM1JYIv">Mofusion</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/4INFMJi3SwIEWixQjlMNig">
+                            <div class="card-image">
+                                <img src="images/songsCards/tum.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/4INFMJi3SwIEWixQjlMNig">
+                                    <p>Tum</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/6hIXwlI4wny3zYuB6cDBBk">Murtaza
+                                        Qizilbash</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/76crGpcBjaBuRTLpxBePXS">
+                            <div class="card-image">
+                                <img src="images/songsCards/ishqaVe.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/76crGpcBjaBuRTLpxBePXS">
+                                    <p>Ishqa Ve</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/1Bz46nDCMO1UOKp9GJjL92">Zeeshan Ali,</a>
+                                    <a href="https://open.spotify.com/artist/7yqoq4MWdw2ZNyAKDqH0fE">Yuvraj Tung,</a>
+                                    <a href="https://open.spotify.com/artist/3allL5EVHCpBzNZHN2JCc5">Sandeep Aulakh,</a>
+                                    <a href="https://open.spotify.com/artist/0d4qS5KvrIwi0l5OMiftsH">Honey Dhillon,</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/1gff8T3LglEcMh0ow2VwdO">
+                            <div class="card-image">
+                                <img src="images/songsCards/andaazeKaram.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/1gff8T3LglEcMh0ow2VwdO">
+                                    <p>Andaaz e Karam</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/2kfi47LWmlXzQ3p3kWonfQ">Madhur Sharma,</a>
+                                    <a href="https://open.spotify.com/artist/7xgtUknw8tyUhWkSnMjhti">Moin,</a>
+                                    <a href="https://open.spotify.com/artist/7uhWXYh7CNH1M9Dwko8qll">ER</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/6YqbrXnmuh8lxNEFeHNOcA">
+                            <div class="card-image">
+                                <img src="images/songsCards/khasara.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/6YqbrXnmuh8lxNEFeHNOcA">
+                                    <p>Khasara</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/5mWQT8CLTa4mAQAJdFjHb1">Abdul Hannan</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/2lV5UdQFHokcaVugdO66nj">
+                            <div class="card-image">
+                                <img src="images/songsCards/meriZindagiHaiTu.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a class="music-title" href="https://open.spotify.com/album/2lV5UdQFHokcaVugdO66nj">
+                                    <p>Meri Zindagi Hai Tu 2.0</p>
+                                </a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/1ZChN8G1Y7CJ0TXbrvblwS">Asim Azhar, </a>
+                                    <a href="https://open.spotify.com/artist/5LBIpDf0NQMSYa6O42d9Mn">Sabri Sisters</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="card-arrow card-next-btn"><img src="icons/next.svg" alt=""></button>
+            </div>
+            <div class="section-header  songs-liked">
+                <div>
+                    <h2>
+                        <a href="https://open.spotify.com/section/0JQ5DB0OGl9xzIpmp08KDT">Albums featuring songs you
+                            like</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="card-carousel-wrapper">
+                <button class="card-arrow card-prev-btn"><img src="icons/prev.svg" alt=""></button>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq">
+                            <div class="card-image">
+                                <img src="images/songsCards/lover.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a href="https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq">Lover</a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02">Taylor Swift</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/track/7oNZfE9wnu7SP55LwNSiKG">
+                            <div class="card-image">
+                                <img src="images/songsCards/hum.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a href="https://open.spotify.com/track/7oNZfE9wnu7SP55LwNSiKG">Hum</a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/6hIXwlI4wny3zYuB6cDBBk">Murtaza
+                                        Qizilbash</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/track/3VJpl4jrFSqY3Y6mAzqfux">
+                            <div class="card-image">
+                                <img src="images/songsCards/harBaar.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a href="https://open.spotify.com/track/3VJpl4jrFSqY3Y6mAzqfux">Har Baar</a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/6hIXwlI4wny3zYuB6cDBBk">Murtaza Qizilbash,
+                                    </a>
+                                    <a href="https://open.spotify.com/artist/4UjFSd24FZluVytp1sk7qq">Samar Jafri</a>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/3JZBsPrhhT1qYdEzZfSsog">
+                            <div class="card-image">
+                                <img src="images/songsCards/maskara.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <a href="https://open.spotify.com/album/3JZBsPrhhT1qYdEzZfSsog">Maskara</a>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">A.R. Rahman</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="card-arrow card-next-btn"><img src="icons/next.svg" alt=""></button>
+            </div>
+
+            <div class="section-header popular-radio">
+                <div>
+                    <h2>
+                        <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu4h">Popular Radio</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="card-carousel-wrapper">
+                <button class="card-arrow card-prev-btn"><img src="icons/prev.svg" alt=""></button>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4CUrkGzn1VSI">
+                            <div class="card-image">
+                                <img src="images/songsCards/karanAujla.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="artists">
+                                <a href="https://open.spotify.com/playlist/37i9dQZF1E4CUrkGzn1VSI">With Shubh, AP
+                                    Dhillon,
+                                    Guru Randhawa and more</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4oJSdHZrVjxD">
+                            <div class="card-image">
+                                <img src="images/songsCards/arijitSingh.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4oJSdHZrVjxD">With Jeet
+                                        Gannguli,
+                                        Pritam, Vishal-Shekhar and more</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4nUyWRQ5Dtzm">
+                            <div class="card-image">
+                                <img src="images/songsCards/talwiinder.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4nUyWRQ5Dtzm">With Push Kahlon,
+                                        NDS, Shubh and more </a>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4uawqu1ixozc">
+                            <div class="card-image">
+                                <img src="images/songsCards/atifAslam.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4uawqu1ixozc">With
+                                        Vishal-Shekhar,
+                                        Sachin-Jigar, Sachet Tandon and more</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4yiJGrYbYs2x">
+                            <div class="card-image">
+                                <img src="images/songsCards/shubh.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4yiJGrYbYs2x">With Cheema Y, AP
+                                        Dhillon, Yo Yo Honey Singh and more</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4sc2ckltYSJH">
+                            <div class="card-image">
+                                <img src="images/songsCards/apDhillon.png" alt="">
+                                <button class="play-btn">
+                                    <img src="icons/play-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <div class="artists">
+                                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4sc2ckltYSJH">With Shubh,
+                                        Gurinder
+                                        Gill, Juss and more</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="card-arrow card-next-btn"><img src="icons/next.svg" alt=""></button>
+            </div>
+
+
+            <section class="made-for-you">
+                <div class="section-header">
+                    <div>
+                        <h2>
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1DX90w5hxk1FK3">Trending Now Pakistan</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="cards-wrapper">
+
+                    <div class="carousel">
+                        <div class="carousel-view">
+                            <div class="carousel-track">
+
+                                <div class="hero-card">
+                                    <div class="card-image-wrapper">
+                                        <div class="card-header">
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <img class="card-logo" src="images/songsCards/dilSukoonLogo.png" alt="">
+                                            </a>
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <div class="card-info">
+                                                    <h3 class="card-title">Dil Sukoon Mix</h3>
+                                                    <p class="card-subtitle">Playlist • Spotify</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <img class="card-img" src="images/songsCards/aarzu.png" alt="">
+                                        <button class="arrow prev-btn"><img src="icons/prev.svg" alt=""></button>
+                                        <button class="arrow next-btn"><img src="icons/next.svg" alt=""></button>
+                                        <div class="card-hover-overlay">
+                                            <button class="preview-btn">
+                                                <svg viewBox="0 0 24 24" width="16" height="16">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z" />
+                                                </svg>
+                                                Preview
+                                            </button>
+                                            <div class="hover-actions">
+                                                <p class="more-btn">• • •</p>
+                                                <button class="add-btn">
+                                                    <svg viewBox="0 0 24 24" width="16" height="16">
+                                                        <path fill="currentColor" d="M11 5h2v14h-2z" />
+                                                        <path fill="currentColor" d="M5 11h14v2H5z" />
+                                                    </svg>
+                                                </button>
+                                                <button class="carousel-play-btn">
+                                                    <img src="icons/play-icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hero-card">
+                                    <div class="card-image-wrapper">
+                                        <div class="card-header">
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <img class="card-logo" src="images/songsCards/dilSukoonLogo.png" alt="">
+                                            </a>
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <div class="card-info">
+                                                    <h3 class="card-title">Dil Sukoon Mix</h3>
+                                                    <p class="card-subtitle">Playlist • Spotify</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <img class="card-img" src="images/songsCards/dilSukoon.png" alt="">
+                                        <button class="arrow prev-btn"><img src="icons/prev.svg" alt=""></button>
+                                        <button class="arrow next-btn"><img src="icons/next.svg" alt=""></button>
+                                        <div class="card-hover-overlay">
+                                            <button class="preview-btn">
+                                                <svg viewBox="0 0 24 24" width="16" height="16">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z" />
+                                                </svg>
+                                                Preview
+                                            </button>
+                                            <div class="hover-actions">
+                                                <p class="more-btn">• • •</p>
+                                                <button class="add-btn">
+                                                    <svg viewBox="0 0 24 24" width="16" height="16">
+                                                        <path fill="currentColor" d="M11 5h2v14h-2z" />
+                                                        <path fill="currentColor" d="M5 11h14v2H5z" />
+                                                    </svg>
+                                                </button>
+                                                <button class="carousel-play-btn">
+                                                    <img src="icons/play-icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel">
+                        <div class="carousel-view">
+                            <div class="carousel-track">
+
+                                <div class="hero-card">
+                                    <div class="card-image-wrapper">
+                                        <div class="card-header">
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <img class="card-logo" src="images/songsCards/murtazaQizilbashLogo.png"
+                                                    alt="">
+                                            </a>
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <div class="card-info">
+                                                    <h3 class="card-title">Bayaan Radio</h3>
+                                                    <p class="card-subtitle">Playlist • Spotify</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <img class="card-img" src="images/songsCards/bayaan.png" alt="">
+                                        <button class="arrow prev-btn"><img src="icons/prev.svg" alt=""></button>
+                                        <button class="arrow next-btn"><img src="icons/next.svg" alt=""></button>
+                                        <div class="card-hover-overlay">
+                                            <button class="preview-btn">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z" />
+                                                </svg>
+                                                Preview
+                                            </button>
+                                            <div class="hover-actions">
+                                                <p class="more-btn">• • •</p>
+                                                <button class="add-btn">
+                                                    <svg viewBox="0 0 24 24" width="16" height="16">
+                                                        <path fill="currentColor" d="M11 5h2v14h-2z" />
+                                                        <path fill="currentColor" d="M5 11h14v2H5z" />
+                                                    </svg>
+                                                </button>
+                                                <button class="carousel-play-btn">
+                                                    <img src="icons/play-icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hero-card">
+                                    <div class="card-image-wrapper">
+                                        <div class="card-header">
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <img class="card-logo" src="images/songsCards/murtazaQizilbashLogo.png"
+                                                    alt="">
+                                            </a>
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <div class="card-info">
+                                                    <h3 class="card-title">Bayaan Radio</h3>
+                                                    <p class="card-subtitle">Playlist • Spotify</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <img class="card-img" src="images/songsCards/merizindagihaitu (2).png" alt="">
+                                        <button class="arrow prev-btn"><img src="icons/prev.svg" alt=""></button>
+                                        <button class="arrow next-btn"><img src="icons/next.svg" alt=""></button>
+                                        <div class="card-hover-overlay">
+                                            <button class="preview-btn">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z" />
+                                                </svg>
+                                                Preview
+                                            </button>
+                                            <div class="hover-actions">
+                                                <p class="more-btn">• • •</p>
+                                                <button class="add-btn">
+                                                    <svg viewBox="0 0 24 24" width="16" height="16">
+                                                        <path fill="currentColor" d="M11 5h2v14h-2z" />
+                                                        <path fill="currentColor" d="M5 11h14v2H5z" />
+                                                    </svg>
+                                                </button>
+                                                <button class="carousel-play-btn">
+                                                    <img src="icons/play-icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hero-card">
+                                    <div class="card-image-wrapper">
+                                        <div class="card-header">
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <img class="card-logo" src="images/songsCards/murtazaQizilbashLogo.png"
+                                                    alt="">
+                                            </a>
+                                            <a class="card-link"
+                                                href="https://open.spotify.com/playlist/37i9dQZF1E4yZPE383DxmO">
+                                                <div class="card-info">
+                                                    <h3 class="card-title">Bayaan Radio</h3>
+                                                    <p class="card-subtitle">Playlist • Spotify</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <img class="card-img" src="images/songsCards/bairan.png" alt="">
+                                        <button class="arrow prev-btn"><img src="icons/prev.svg" alt=""></button>
+                                        <button class="arrow next-btn"><img src="icons/next.svg" alt=""></button>
+                                        <div class="card-hover-overlay">
+                                            <button class="preview-btn">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z" />
+                                                </svg>
+                                                Preview
+                                            </button>
+                                            <div class="hover-actions">
+                                                <p class="more-btn">• • •</p>
+                                                <button class="add-btn">
+                                                    <svg viewBox="0 0 24 24" width="16" height="16">
+                                                        <path fill="currentColor" d="M11 5h2v14h-2z" />
+                                                        <path fill="currentColor" d="M5 11h14v2H5z" />
+                                                    </svg>
+                                                </button>
+                                                <button class="carousel-play-btn">
+                                                    <img src="icons/play-icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-columns">
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="https://www.spotify.com/pk-en/about-us/contact/">About</a>
+                        <a href="https://www.lifeatspotify.com/">Jobs</a>
+                        <a href="https://newsroom.spotify.com/">For the Record</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Communities</h4>
+                        <a href="https://artists.spotify.com/home">For Artists</a>
+                        <a href="https://developer.spotify.com/">Developers</a>
+                        <a href="https://ads.spotify.com/">Advertising</a>
+                        <a href="https://investors.spotify.com/">Investors</a>
+                        <a href="https://spotifyforvendors.com/">Vendors</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Useful links</h4>
+                        <a href="https://support.spotify.com/">Support</a>
+                        <a href="https://www.spotify.com/pk-en/download/">Free Mobile App</a>
+                        <a href="https://open.spotify.com/popular-in/pk">Popular by Country</a>
+                        <a href="https://www.spotify.com/pk-en/import-music/">Import your music</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Spotify Plans</h4>
+                        <a href="https://www.spotify.com/pk-en/duo/#ref=spotifycom_footer_premium_duo">Premium Duo</a>
+                        <a href="https://www.spotify.com/pk-en/family/#ref=spotifycom_footer_premium_family">Premium
+                            Family</a>
+                        <a href="https://www.spotify.com/pk-en/student/#ref=spotifycom_footer_premium_student">Premium
+                            Student</a>
+                        <a href="https://www.spotify.com/pk-en/free/#ref=spotifycom_footer_free">Spotify Free</a>
+                    </div>
+                </div>
+
+                <div class="footer-last-row">
+                    <div class="last-row">
+                        <a href="">Legal</a>
+                    </div>
+
+                    <div class="last-row">
+                        <a href="">Saftey & Privacy Center</a>
+                    </div>
+
+                    <div class="last-row">
+                        <a href="">Privacy Policy</a>
+                    </div>
+
+                    <div class="last-row">
+                        <a href="">Cookies</a>
+                    </div>
+
+                    <div class="last-row">
+                        <a href="">About Ads</a>
+                    </div>
+
+                    <div class="last-row">
+                        <a href="">Accessibility</a>
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+
+        <div class="playbar">
+            <div class="left-playbar">
+                <img class="now-playing-img" src="cover.jpg" alt="">
+                <div class="track-info">
+                    <p class="track-name"></p>
+                    <p class="track-artist"></p>
+                </div>
+            </div>
+
+            <div class="center-playbar">
+                <div class="playbar-btn">
+                    <img class="shuffle" src="icons/shuffle.svg" alt="">
+                    <img id="previous" class="playPrev" src="icons/playPrev.svg" alt="">
+                    <button id="play" class="musicPlay"><img src="icons/playButton.svg" alt=""></button>
+                    <img id="next" class="playNext" src="icons/playNext.svg" alt="">
+                    <img class="repeat" src="icons/repeat.svg" alt="">
+                </div>
+
+                <div class="seek-row">
+                    <div class="songtime"></div>
+                    <div class="seekbar">
+                        <div class="seek-fill"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-playbar">
+                <img src="icons/lyrics.svg" alt="">
+                <img src="icons/queue.svg" alt="">
+                <img src="icons/connect.svg" alt="">
+
+                <div class="volume-group">
+                    <img class="volume-icon" src="icons/volume.svg" alt="">
+                    <div class="volume-bar">
+                        <div class="volume-fill"></div>
+                        <div class="volume-circle"></div>
+                    </div>
+                </div>
+
+                <img src="icons/miniplayer.svg" alt="">
+                <img src="icons/fullScreen.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
