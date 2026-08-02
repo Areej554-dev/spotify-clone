@@ -32,16 +32,77 @@ A fully functional Spotify web player clone built with pure HTML, CSS, and JavaS
 ## 📁 Project Structure
 spotify-clone/
 ├── index.html
-├── style.css
 ├── script.js
+├── style.css
+├── utility.css
+├── favicon.ico
+├── logo.svg
+├── cover.jpg
 ├── icons/
+│   ├── logo.svg
+│   ├── home.svg
+│   ├── search.svg
+│   ├── browse.svg
+│   ├── download.svg
+│   ├── bell.svg
+│   ├── users.svg
+│   ├── plus.svg
+│   ├── expand.svg
+│   ├── pin.svg
+│   ├── recents.svg
+│   ├── shuffle.svg
+│   ├── playPrev.svg
+│   ├── playButton.svg
+│   ├── pause.svg
+│   ├── playNext.svg
+│   ├── repeat.svg
+│   ├── lyrics.svg
+│   ├── queue.svg
+│   ├── connect.svg
+│   ├── volume.svg
+│   ├── mute.svg
+│   ├── miniplayer.svg
+│   ├── fullScreen.svg
+│   ├── play-icon.svg
+│   ├── prev.svg
+│   ├── next.svg
+│   └── like.svg
 ├── images/
-│ └── songsCards/
+│   ├── Liked-Songs.png
+│   ├── taylor.png
+│   ├── talwiinder.png
+│   ├── arijit.png
+│   └── songsCards/
+│       ├── hum.png
+│       ├── harBaar.png
+│       ├── maskara.png
+│       ├── lover.png
+│       ├── dailyMix1.png
+│       ├── dailyMix2.png
+│       ├── dailyMix3.png
+│       ├── dailyMix4.png
+│       ├── dailyMix5.png
+│       ├── dailyMix6.png
+│       ├── discover.png
+│       ├── pyaarKyunBanaya.png
+│       ├── laavan.png
+│       ├── tum.png
+│       ├── ishqaVe.png
+│       ├── andaazeKaram.png
+│       ├── khasara.png
+│       ├── meriZindagiHaiTu.png
+│       ├── karanAujla.png
+│       ├── arijitSingh.png
+│       ├── talwiinder.png
+│       ├── atifAslam.png
+│       ├── murtazaQizilbashLogo.png
+│       ├── bairan.png
+│       └── default.png
 └── songs/
-├── Har Baar - RaagWorld.mp3
-├── Hum - RaagWorld.mp3
-├── Maskara - RaagWorld.mp3
-└── Taylor Swift - Lover.mp3
+    ├── Har Baar - RaagWorld.mp3
+    ├── Hum - RaagWorld.mp3
+    ├── Maskara - RaagWorld.mp3
+    └── Taylor Swift - Lover.mp3
 
 
 ## 🚀 How to Run
