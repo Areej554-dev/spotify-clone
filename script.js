@@ -240,8 +240,8 @@ document.querySelectorAll(".card-carousel-wrapper").forEach(wrapper => {
             prevBtn.classList.remove("dimmed");
         }
         if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 1) {
-            nextBtn.classList.add("dimmed");
-        } else {
+            nextBtn.classList.add("dimmed"); } 
+        else {
             nextBtn.classList.remove("dimmed");
         }
     });
