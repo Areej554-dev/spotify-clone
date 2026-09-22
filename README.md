@@ -2,9 +2,6 @@
 
 A fully functional Spotify web player clone built with pure HTML, CSS, and JavaScript — no frameworks, no libraries.
 
-## 🌐 Live Demo
-[View Live →](https://Areej554-dev.github.io/spotify-clone)
-
 
 ## ✨ Features
 
