@@ -8,7 +8,7 @@ A fully functional Spotify web player clone built with pure HTML, CSS, and JavaS
 - 🎵 **Play & Pause** songs with a single click
 - ⏩ **Seekbar** — click or drag anywhere to jump to that point
 - 🔊 **Volume Control** — drag slider or click icon to mute/unmute
-- 💾 **Last Played Memory** — remembers last song after page reload
+- 💾 **Last Played Memory** — remembers last song after page reload same
 - 🖼️ **Dynamic Song Info** — name, artist, cover update automatically in playbar
 - ❤️ **Liked Songs Sidebar** — expandable playlist with art, name, artist
 - 🎠 **Card Carousels** — smooth prev/next navigation on all sections
@@ -87,7 +87,7 @@ git clone https://github.com/Areej554-dev/spotify-clone.git
 ## 🔑 Key JavaScript Concepts Used
 
 - `Audio()` API for music playback
-- `localStorage` for remembering last played song
+- `localStorage` for remembering last played song and offline storing songs ability
 - `getBoundingClientRect()` for seekbar and volume drag
 - `timeupdate` event for live time and seekbar sync
 - DOM manipulation for dynamic song list generation
